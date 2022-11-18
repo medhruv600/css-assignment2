@@ -1,33 +1,49 @@
 body {
   background-color: rgb(235, 195, 143);
 }
+.main {
+  margin: 0px;
+  width: 100%;
+}
 .navbar {
   width: 100%;
   height: 80px;
   color: white;
   font-size: 30px;
   font-weight: bolder;
+  /* border: 2px solid gray; */
   background-color: purple;
 }
 .chania {
-  padding-top: 20px;
-  margin: 15px;
+  padding-top: 12px;
+  margin: 10px;
+}
+.middle {
+  width: 100%;
+  display: flex;
+  /* border: 2px solid gray; */
 }
 .list {
-  height: 30px;
+  height: 50px;
   width: 300px;
-  margin: 10px;
+  margin: 5px;
+  font-size: 20px;
   padding-left: 10px;
-  padding-top: 20px;
+  padding-top: 25px;
   color: white;
   background-color: rgb(13, 129, 237);
 }
 
+.body {
+  border: 1px solid gray;
+}
+.town {
+  padding: 10px;
+  margin-top: 50px;
+}
 .city {
-  position: absolute;
-  left: 400px;
-  top: 120px;
-  display: inline-block;
+  margin-left: 150px;
+  border: 2px solid gray;
 }
 .para {
   font-size: 40px;
@@ -36,14 +52,15 @@ body {
 .sent {
   font-size: larger;
 }
+.most {
+  margin-top: 25px;
+}
 .right {
-  padding-top: 20px;
   width: 270px;
-  height: 300px;
+  height: 320px;
   color: white;
-  position: absolute;
-  right: 8px;
-  top: 120px;
+  margin-left: 152px;
+  border: 2px solid gray;
   background-color: rgb(8, 155, 234);
 }
 .what {
@@ -55,70 +72,49 @@ body {
   text-align: center;
 }
 .footer {
-  width: 99%;
+  width: 100%;
   height: 50px;
-  text-align: center;
   color: white;
-  position: absolute;
-  bottom: 200px;
+  font-size: 20px;
+  text-align: center;
+  border: 2px solid gray;
   background-color: rgb(5, 148, 204);
 }
-@media only screen and (min-width: 250px) and (max-width: 414px) {
-  .navbar {
-    width: 72%;
-    height: 80px;
-    color: white;
-    font-size: 30px;
-    font-weight: bolder;
-    background-color: purple;
-  }
-  .list {
-    height: 15px;
-    width: 63%;
-    font-size: 12px;
-    color: white;
-    background-color: rgb(13, 129, 237);
+.header {
+  margin-top: 15px;
+}
+@media only screen and (min-width: 250px) and (max-width: 415px) {
+  .middle {
+    flex-direction: column;
   }
   .city {
-    width: 92%;
-    position: absolute;
-    left: 17px;
-    top: 300px;
-    display: inline-block;
-  }
-  .para {
-    font-size: 15px;
-    font-weight: bolder;
-  }
-  .sent {
-    font-size: 12px;
+    margin-left: 0px;
   }
   .right {
-    width: 100px;
-    height: 100px;
-    color: white;
-    position: absolute;
-    /* right: 8px; */
-    /* top: 1200px; */
-    background-color: rgb(8, 155, 234);
+    margin: 0px;
+    width: 100%;
   }
-  .what {
-    text-align: center;
-    /* font-weight: bolder; */
-    font-size: 10px;
+  .list {
+    width: 96%;
   }
-  .where {
-    font-size: 4px;
-    text-align: center;
+}
+
+@media only screen and (min-width: 415px) and (max-width: 769px) {
+  .middle {
+    flex-direction: column;
+    border: none;
   }
-  .footer {
-    display: none;
-    width: 10%;
-    height: 50px;
-    text-align: center;
-    color: white;
-    position: absolute;
-    bottom: 200px;
-    background-color: rgb(5, 148, 204);
+  .city {
+    /* border: none; */
+    margin-left: 0px;
+  }
+  .right {
+    /* border: none; */
+    margin: 0px;
+    width: 100%;
+  }
+  .list {
+    /* border: none; */
+    width: 98%;
   }
 }
